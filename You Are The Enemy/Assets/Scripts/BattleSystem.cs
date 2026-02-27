@@ -1,10 +1,11 @@
 using UnityEngine;
 using TMPro;
 using System.Collections;
-//using be epic protocol
+
 public enum BattleState {start, playerTurn, enemyTurn, won, lost};
 public class BattleSystem : MonoBehaviour
 {
+    //initialize variables
     public GameObject playerPrefab;
     public GameObject enemyPrefab;
 
@@ -125,6 +126,7 @@ public class BattleSystem : MonoBehaviour
         }
     }
 
+    //Button scripts
     public void OnAttackButton()
     {
         Debug.Log("Attacking...");
